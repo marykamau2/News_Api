@@ -1,6 +1,6 @@
 
 import urllib.request,json
-from .models import NewsSource,NewsArticle
+# from .models import NewsSource,NewsArticle
 from datetime import date
 
 #getting the api key
