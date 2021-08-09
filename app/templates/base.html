@@ -1,0 +1,11 @@
+{% extends 'bootstrap/base.html'%}
+<!-- Navbar block  --> 
+{% block navbar %}
+    {% include 'navbar.html' %}
+{% endblock %}
+{% block content %}
+{{super()}}
+{% block footer %}
+<footer>&copy; 2021 Awesome, Inc.</footer>
+{% endblock footer %}
+{% endblock content %}
