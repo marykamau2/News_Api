@@ -52,5 +52,5 @@ Flask
 Boostrap
 HTML
 CSS
-### Licence
-This project is under the MIT licence
+### License
+MIT Licence Copyright (c) 2021 mary Inc.
