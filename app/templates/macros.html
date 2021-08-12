@@ -1,19 +1,11 @@
-{% macro displaySourceList(source_list) %}
-{% for source_row in source_list |batch(4)%}
-<div class="row">
-	{% for sources in source_row %}
-	<div class="col-md-3 card">
-		<div>
-			<h3>{{ sources.name}}</h3>
-		</div>
-		<div>
-			<p>
-				{{ sources.description}}
-			</p>
-			<a href="/news_articles/{{sources.id}}"><button type="button" class="btn btn-outline-primary">View {{ sources.name}} articles</button></a>
-		</div>
-	</div>
-	{% endfor %}
-</div>
+{% macro displayNewsList(news_list) %}
+{% for news in news_list %}
+    <div class="panel" style="width: 35rem;">
+        <h3 class="panel-heading text-uppercase h4" style="font-style: italic;">{{ news.name}}</h3>
+        <div class="panel-body">
+          <p class="card-text">{{ news.description}}</p>
+          <a href="/sources/{{news.id}}" class="btn btn-success">Check Article</a>
+        </div>
+      </div>
 {% endfor %}
 {% endmacro %}

@@ -1,21 +1,19 @@
 import os
 
 class Config:
-	SOURCE_BASE_URL ='https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
-	ARTICLE_BASE_URL = 'https://newsapi.org/v2/everything?language=en&sources={}&apiKey={}'
 
-	NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
-     
- 
-    
+    NEWS_API_SOURCE_URL = 'https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
+    NEWS_API_ARTICLE = 'https://newsapi.org/v2/everything?sources={}&apiKey={}'
+    NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
 
 class ProdConfig(Config):
-  pass
+    pass
 
 class DevConfig(Config):
-  DEBUG = True
+    DEBUG = True
 
-config_options = {
-	'development':DevConfig,
-	'production':ProdConfig
-}
+configOptions = {
+    'development':DevConfig,
+    'production':ProdConfig
+}   
+
