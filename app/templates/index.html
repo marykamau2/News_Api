@@ -9,24 +9,24 @@
 {% block content %}
 
 <div class="container">
-   <h2 class="text-center h2" style="color: blue;">WELCOME TO NEWS-API.</h2>
-   <h2 class="text-center h2" style="color: blue;">This is application that will help people to list and preview news articles from various sources.</h2>
+   <h2 class="text-center h2" style="color: grey;">WELCOME TO OUR NEWS-API.</h2>
+   <h2 class="text-center h2" style="color: grey;">This is application that will help people to list and preview news articles from various sources.</h2>
 
    <h3 class="text-uppercase text-primary text-center h1"><i><b>Covid19:</b></i></h3>
-   <hr style="height:2px; width:100%; border-width:0; color: black; background-color: brown;">
+   <hr style="height:2px; width:100%; border-width:0; color: black; background-color: black">
    <div class="tech mb-3">
       {{ macro.displayNewsList(health)}}
    </div>
    <h3 class="text-uppercase text-primary font-weight-bold text-center h1"><i>Sports news</i></h3>
-   <hr style="height:2px; width:100%; border-width:0; color: black; background-color: brown;">
+   <hr style="height:2px; width:100%; border-width:0; color: black; background-color: black;">
    <div class="tech">
       {{ macro.displayNewsList(sports)}}
    </div>
    <h3 class="text-uppercase text-primary text-center h1"><i>business :</i></h3>
-   <hr style="height:2px; width:100%; border-width:0; color: black; background-color: brown;">
+   <hr style="height:2px; width:100%; border-width:0; color: black; background-color: black;">
    <div class="tech">
       {{ macro.displayNewsList(business)}}
    </div>
 </div>
 
-{% endblock %}
+{% endblock %} 
